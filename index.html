@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assets &mdash; Profullstack &amp; #Moshcoding brand kit</title>
+<meta name="description" content="Logos, avatars, banners, badges, ad cards and videos for Profullstack, Inc. and #Moshcoding. Everything you need to post, sponsor or write about us.">
+<style>
+:root {
+	color-scheme: light dark;
+	--red: #E02337;
+	--lime: #A0B449;
+	--ink: light-dark(#111, #f2f2f2);
+	--dim: light-dark(#555, #a9a9a9);
+	--line: light-dark(#d8d8d8, #333);
+	--tile: light-dark(#f4f4f5, #171717);
+	--bg: light-dark(#fff, #0d0d0d);
+}
+* { box-sizing: border-box; }
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	line-height: 1.55;
+	max-width: 68rem;
+	margin: 0 auto;
+	padding: 1rem 1rem 4rem;
+	color: var(--ink);
+	background: var(--bg);
+}
+h1 { margin: 0 0 .2rem; font-size: 2rem; letter-spacing: -.02em; }
+h2 {
+	margin: 3.5rem 0 .3rem;
+	padding-bottom: .35rem;
+	border-bottom: 2px solid var(--red);
+	font-size: 1.4rem;
+	scroll-margin-top: 1rem;
+}
+h3 {
+	margin: 2rem 0 .6rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	color: var(--dim);
+}
+a { color: inherit; }
+p { margin: .5rem 0; }
+.lede { font-size: 1.05rem; max-width: 46rem; }
+.sub { color: var(--dim); font-size: .92rem; max-width: 46rem; }
+
+/* --- nav --- */
+.toc {
+	display: flex; flex-wrap: wrap; gap: .4rem .9rem;
+	margin: 1.2rem 0 0; padding: .7rem 0;
+	border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+	font-size: .9rem; font-weight: 500;
+}
+.toc a { text-decoration: none; border-bottom: 2px solid transparent; }
+.toc a:hover { border-bottom-color: currentColor; }
+
+/* --- asset grid --- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.4rem; }
+.grid.wide { grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr)); }
+.grid.tight { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 1rem; }
+figure { margin: 0; }
+figure .shot {
+	display: block;
+	background: var(--tile);
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	overflow: hidden;
+	line-height: 0;
+}
+figure .shot img, figure .shot video { width: 100%; height: auto; display: block; }
+figure .shot.pad { padding: 1.1rem; }
+figcaption { padding-top: .5rem; }
+figcaption b { font-size: .95rem; font-weight: 600; }
+.meta {
+	display: block; margin: .1rem 0 .3rem;
+	font: 400 .78rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+	color: var(--dim);
+}
+figcaption p { margin: 0 0 .45rem; font-size: .87rem; color: var(--dim); }
+.dl {
+	display: inline-block;
+	font-size: .8rem; font-weight: 600; text-decoration: none;
+	padding: .22rem .6rem;
+	border: 1px solid var(--line); border-radius: 4px;
+}
+.dl:hover { border-color: var(--red); color: var(--red); }
+.warn {
+	display: inline-block; margin: 0 0 .45rem;
+	font-size: .78rem; font-weight: 600;
+	color: #b45309; background: #fef3c7;
+	padding: .12rem .45rem; border-radius: 3px;
+}
+
+/* --- palette --- */
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: .8rem; }
+.sw {
+	border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+	cursor: pointer; background: none; color: inherit;
+	padding: 0; text-align: left; font: inherit; width: 100%;
+}
+.sw .chip { height: 3.6rem; display: block; }
+.sw .name { display: block; padding: .35rem .5rem 0; font-size: .82rem; font-weight: 600; }
+.sw .hex { display: block; padding: 0 .5rem .45rem; font: .78rem ui-monospace, Menlo, monospace; color: var(--dim); }
+.sw.copied .hex::after { content: " copied"; color: var(--red); font-weight: 700; }
+
+/* --- tables --- */
+table { border-collapse: collapse; width: 100%; font-size: .88rem; margin-top: .6rem; }
+th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .76rem; text-transform: uppercase; letter-spacing: .06em; color: var(--dim); }
+td code, .snippet {
+	font: .82rem ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.snippet {
+	display: block; width: 100%;
+	background: var(--tile); border: 1px solid var(--line); border-radius: 5px;
+	padding: .6rem .7rem; margin: .4rem 0 0;
+	overflow-x: auto; white-space: pre; color: inherit;
+}
+.scroll { overflow-x: auto; }
+footer { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--dim); }
+</style>
+</head>
+<body>
+
+<h1>Assets</h1>
+<p class="lede">Brand and marketing files for <a href="https://profullstack.com">Profullstack,&nbsp;Inc.</a>
+and <a href="https://moshcoding.com">#Moshcoding</a> &mdash; avatars, banners, ad cards, badges and
+video cuts, at the sizes the platforms actually want.</p>
+<p class="sub">Everything here is a direct download, no sign-up. Grab the original file, not a
+screenshot of the preview: previews on this page are compressed to keep it fast.
+Questions or a size you need that isn't here &mdash;
+<a href="mailto:anthony@profullstack.com">anthony@profullstack.com</a>.</p>
+
+<nav class="toc">
+	<a href="#colors">Colors</a>
+	<a href="#profullstack">Profullstack</a>
+	<a href="#moshcoding">#Moshcoding</a>
+	<a href="#paybadge">Paybadge</a>
+	<a href="#sizes">Size cheat sheet</a>
+	<a href="#usage">Usage</a>
+	<a href="/">Home</a>
+</nav>
+
+<!-- ================= COLORS ================= -->
+<h2 id="colors">Colors</h2>
+<p class="sub">Click any swatch to copy its hex. Profullstack values come from the site's
+stylesheet; the #Moshcoding values are sampled from the artwork below.</p>
+
+<h3>Profullstack</h3>
+<div class="swatches">
+	<button class="sw" data-hex="#E02337"><span class="chip" style="background:#E02337"></span><span class="name">Profullstack Red</span><span class="hex">#E02337</span></button>
+	<button class="sw" data-hex="#0D0D0D"><span class="chip" style="background:#0D0D0D"></span><span class="name">Ink</span><span class="hex">#0D0D0D</span></button>
+	<button class="sw" data-hex="#1F1F1F"><span class="chip" style="background:#1F1F1F"></span><span class="name">Surface</span><span class="hex">#1F1F1F</span></button>
+	<button class="sw" data-hex="#2A2A2A"><span class="chip" style="background:#2A2A2A"></span><span class="name">Surface Raised</span><span class="hex">#2A2A2A</span></button>
+	<button class="sw" data-hex="#BA18AA"><span class="chip" style="background:#BA18AA"></span><span class="name">Accent Magenta</span><span class="hex">#BA18AA</span></button>
+	<button class="sw" data-hex="#6EE7A8"><span class="chip" style="background:#6EE7A8"></span><span class="name">Accent Green</span><span class="hex">#6EE7A8</span></button>
+</div>
+
+<h3>#Moshcoding</h3>
+<div class="swatches">
+	<button class="sw" data-hex="#A0B449"><span class="chip" style="background:#A0B449"></span><span class="name">Mosh Lime</span><span class="hex">#A0B449</span></button>
+	<button class="sw" data-hex="#7C9610"><span class="chip" style="background:#7C9610"></span><span class="name">Mosh Green</span><span class="hex">#7C9610</span></button>
+	<button class="sw" data-hex="#4A5621"><span class="chip" style="background:#4A5621"></span><span class="name">Deep Olive</span><span class="hex">#4A5621</span></button>
+	<button class="sw" data-hex="#1DB954"><span class="chip" style="background:#1DB954"></span><span class="name">Spotify Green</span><span class="hex">#1DB954</span></button>
+	<button class="sw" data-hex="#000000"><span class="chip" style="background:#000000"></span><span class="name">Pit Black</span><span class="hex">#000000</span></button>
+</div>
+
+<!-- ================= PROFULLSTACK ================= -->
+<h2 id="profullstack">Profullstack, Inc.</h2>
+<p class="sub">The <code>&lt;/&gt;</code> mark with the red slash. Keep the slash red
+(<code>#E02337</code>) and give the mark clear space equal to the height of one bracket.</p>
+
+<h3>Logos &amp; marks</h3>
+<div class="grid">
+	<figure>
+		<a class="shot pad" href="profullstack/profullstack-logo.svg"><img src="profullstack/profullstack-logo.svg" alt="Profullstack &lt;/&gt; logo, vector" loading="lazy"></a>
+		<figcaption>
+			<b>Primary logo (vector)</b>
+			<span class="meta">SVG &middot; 138&times;74 &middot; 1 KB</span>
+			<p>Scales to any size. White brackets and a red slash &mdash; built for dark backgrounds. Use this one wherever you can.</p>
+			<a class="dl" href="profullstack/profullstack-logo.svg" download>Download SVG</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="profullstack/profullstack-mark-1024.png"><img src="previews/profullstack__profullstack-mark-1024.jpg" alt="Profullstack square mark on white" loading="lazy"></a>
+		<figcaption>
+			<b>Square mark</b>
+			<span class="meta">PNG &middot; 1024&times;1024 &middot; 15 KB</span>
+			<p>Black brackets on white. The go-to profile picture and app icon &mdash; square, high contrast, readable at 48&nbsp;px.</p>
+			<a class="dl" href="profullstack/profullstack-mark-1024.png" download>Download PNG</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot pad" href="profullstack/icons/profullstack-1024.png"><img src="profullstack/icons/profullstack-1024.png" alt="Profullstack app icon" loading="lazy"></a>
+		<figcaption>
+			<b>App icon</b>
+			<span class="meta">PNG &middot; 1024&times;1024 &middot; 16 KB</span>
+			<p>Icon-grid version of the mark, the source for the favicon and touch-icon set below.</p>
+			<a class="dl" href="profullstack/icons/profullstack-1024.png" download>Download PNG</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Avatars</h3>
+<div class="grid tight">
+	<figure>
+		<a class="shot" href="profullstack/avatar-anthony-1254.png"><img src="previews/profullstack__avatar-anthony-1254.jpg" alt="Headshot of Anthony Ettinger" loading="lazy"></a>
+		<figcaption>
+			<b>Anthony Ettinger</b>
+			<span class="meta">PNG &middot; 1254&times;1254 &middot; 2.0 MB</span>
+			<p>Founder. Square headshot for bylines, podcast art and speaker pages.</p>
+			<a class="dl" href="profullstack/avatar-anthony-1254.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="profullstack/avatar-preshy-1254.png"><img src="previews/profullstack__avatar-preshy-1254.jpg" alt="Headshot of Preshy" loading="lazy"></a>
+		<figcaption>
+			<b>Preshy</b>
+			<span class="meta">PNG &middot; 1254&times;1254 &middot; 1.9 MB</span>
+			<p>Square headshot, same treatment and crop as above.</p>
+			<a class="dl" href="profullstack/avatar-preshy-1254.png" download>Download</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Banners &amp; social cards</h3>
+<div class="grid wide">
+	<figure>
+		<a class="shot" href="profullstack/profullstack-header-1707x282.jpg"><img src="previews/profullstack__profullstack-header-1707x282.jpg" alt="Profullstack wide channel header" loading="lazy"></a>
+		<figcaption>
+			<b>Channel / profile header</b>
+			<span class="meta">JPG &middot; 1707&times;282 &middot; 30 KB</span>
+			<p>The header running on <a href="https://x.com/ProfullstackInc">@ProfullstackInc</a> &mdash; a tight crop of the chrome-and-red mark. Very wide, so keep it for banner slots only.</p>
+			<a class="dl" href="profullstack/profullstack-header-1707x282.jpg" download>Download JPG</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="profullstack/profullstack-social-card-2048x1152.png"><img src="previews/profullstack__profullstack-social-card-2048x1152.jpg" alt="Profullstack 16:9 social card with hashtags" loading="lazy"></a>
+		<figcaption>
+			<b>Social card &mdash; 16:9</b>
+			<span class="meta">PNG &middot; 2048&times;1152 &middot; 1.1 MB</span>
+			<p>Full chrome mark with the <code>#security #tech #growth #marketing</code> strip. Drop-in Open Graph image, YouTube thumbnail or link preview.</p>
+			<a class="dl" href="profullstack/profullstack-social-card-2048x1152.png" download>Download PNG</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="profullstack/profullstack-bg-1920x1401.png"><img src="previews/profullstack__profullstack-bg-1920x1401.jpg" alt="Profullstack background texture" loading="lazy"></a>
+		<figcaption>
+			<b>Background texture</b>
+			<span class="meta">PNG &middot; 1920&times;1401 &middot; 3.2 MB &middot; <a href="profullstack/profullstack-bg.svg">SVG, 5.9 MB</a></span>
+			<p>The site's hero backdrop. Use it behind slides and ad creative when you need something on-brand but quiet. Vector version linked above.</p>
+			<a class="dl" href="profullstack/profullstack-bg-1920x1401.png" download>Download PNG</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Favicons &amp; touch icons</h3>
+<p class="sub">A complete generated set &mdash; <code>favicon.ico</code>, <code>favicon-16</code>
+through <code>-196</code>, Apple touch icons 57&ndash;152&nbsp;px, and Microsoft tile images.
+20 files, browse the folder and take what you need.</p>
+<p><a class="dl" href="profullstack/icons/">Browse icon set &rarr;</a></p>
+
+<h3>Video</h3>
+<div class="grid wide">
+	<figure>
+		<a class="shot" href="profullstack/video/profullstack-16x9.mp4"><video src="profullstack/video/profullstack-16x9.mp4" poster="previews/profullstack__profullstack-social-card-2048x1152.jpg" controls preload="none"></video></a>
+		<figcaption>
+			<b>Brand spot &mdash; 16:9</b>
+			<span class="meta">MP4 &middot; landscape &middot; 5.8 MB</span>
+			<p>Animated logo spot. YouTube, LinkedIn, X, or as an intro/outro bumper.</p>
+			<a class="dl" href="profullstack/video/profullstack-16x9.mp4" download>Download MP4</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="profullstack/video/profullstack-9x16.mp4"><video src="profullstack/video/profullstack-9x16.mp4" poster="previews/profullstack__profullstack-mark-1024.jpg" controls preload="none"></video></a>
+		<figcaption>
+			<b>Brand spot &mdash; 9:16</b>
+			<span class="meta">MP4 &middot; vertical &middot; 1.9 MB</span>
+			<p>Same spot cut vertical for Reels, Shorts, TikTok and Stories.</p>
+			<a class="dl" href="profullstack/video/profullstack-9x16.mp4" download>Download MP4</a>
+		</figcaption>
+	</figure>
+</div>
+
+<!-- ================= MOSHCODING ================= -->
+<h2 id="moshcoding">#Moshcoding</h2>
+<p class="sub">The metal-flavoured developer brand behind <a href="https://moshcoding.com">moshcoding.com</a>
+and the Spotify playlist &mdash; skulls, circle pits and lime green on black.
+Loud on purpose. Pairs with <a href="https://pairux.com/@moshcoding">@moshcoding</a> streams.</p>
+
+<h3>Badges &amp; stickers</h3>
+<div class="grid tight">
+	<figure>
+		<a class="shot" href="moshcoding/badges/moshcoding-badge-push-code-start-pits-302.png"><img src="previews/moshcoding__badges__moshcoding-badge-push-code-start-pits-302.jpg" alt="Round badge: Push code. Start pits." loading="lazy"></a>
+		<figcaption>
+			<b>Push Code. Start Pits.</b>
+			<span class="meta">PNG &middot; 302&times;302 &middot; 95 KB</span>
+			<p>Round badge, skeleton horns. The flagship sticker &mdash; laptop lids, README shields, Discord emoji.</p>
+			<a class="dl" href="moshcoding/badges/moshcoding-badge-push-code-start-pits-302.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/badges/moshcoding-badge-push-code-start-pits-246x286.png"><img src="previews/moshcoding__badges__moshcoding-badge-push-code-start-pits-246x286.jpg" alt="Push code start pits badge, portrait crop" loading="lazy"></a>
+		<figcaption>
+			<b>Push Code &mdash; portrait crop</b>
+			<span class="meta">PNG &middot; 246&times;286 &middot; 93 KB</span>
+			<p>Same badge, tighter portrait framing for narrow columns and sidebars.</p>
+			<a class="dl" href="moshcoding/badges/moshcoding-badge-push-code-start-pits-246x286.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/badges/moshcoding-badge-code-hard-302.png"><img src="previews/moshcoding__badges__moshcoding-badge-code-hard-302.jpg" alt="Round badge with guitars and skull" loading="lazy"></a>
+		<figcaption>
+			<b>Code Hard &mdash; crossed guitars</b>
+			<span class="meta">PNG &middot; 302&times;302 &middot; 113 KB</span>
+			<span class="warn">Garbled lettering</span>
+			<p>The arc text renders as nonsense (&ldquo;CODE HARB RAS HARDEE&rdquo;). Fine as a small decorative mark; don't run it large or in print until it's redrawn.</p>
+			<a class="dl" href="moshcoding/badges/moshcoding-badge-code-hard-302.png" download>Download</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Banners</h3>
+<div class="grid wide">
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-main-1115x387.png"><img src="previews/moshcoding__banners__moshcoding-banner-main-1115x387.jpg" alt="Moshcoding wide banner, code hard mosh harder" loading="lazy"></a>
+		<figcaption>
+			<b>Main banner</b>
+			<span class="meta">PNG &middot; 1115&times;387 &middot; 628 KB</span>
+			<p>&ldquo;Code hard. Mosh harder.&rdquo; with the git-push callouts. The canonical #Moshcoding banner &mdash; start here.</p>
+			<a class="dl" href="moshcoding/banners/moshcoding-banner-main-1115x387.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-original-1503x351.png"><img src="previews/moshcoding__banners__moshcoding-banner-original-1503x351.jpg" alt="Moshcoding original wide banner" loading="lazy"></a>
+		<figcaption>
+			<b>Original wide banner</b>
+			<span class="meta">PNG &middot; 1503&times;351 &middot; 788 KB</span>
+			<p>The earlier, wider cut. Roughly 4.3:1 &mdash; good for X/LinkedIn headers where the main banner crops too tight.</p>
+			<a class="dl" href="moshcoding/banners/moshcoding-banner-original-1503x351.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-build-break-mosh-769x302.png"><img src="previews/moshcoding__banners__moshcoding-banner-build-break-mosh-769x302.jpg" alt="Build. Break. Mosh. banner" loading="lazy"></a>
+		<figcaption>
+			<b>Build. Break. Mosh.</b>
+			<span class="meta">PNG &middot; 769&times;302 &middot; 332 KB</span>
+			<p>Short footer banner. Sits well at the bottom of a README or newsletter.</p>
+			<a class="dl" href="moshcoding/banners/moshcoding-banner-build-break-mosh-769x302.png" download>Download</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Banner variations &mdash; 2048&times;682</h3>
+<p class="sub">Four full-width cuts at 3:1. This is the size to use for a Spotify playlist header,
+a YouTube channel art safe area, or any hero slot &mdash; they're the highest-resolution
+#Moshcoding art we have.</p>
+<div class="grid wide">
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-01-2048x682.png"><img src="previews/moshcoding__banners__moshcoding-banner-01-2048x682.jpg" alt="Moshcoding banner variation 1" loading="lazy"></a>
+		<figcaption><b>Variation 01</b><span class="meta">PNG &middot; 2048&times;682 &middot; 1.1 MB</span>
+		<a class="dl" href="moshcoding/banners/moshcoding-banner-01-2048x682.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-02-2048x682.png"><img src="previews/moshcoding__banners__moshcoding-banner-02-2048x682.jpg" alt="Moshcoding banner variation 2" loading="lazy"></a>
+		<figcaption><b>Variation 02</b><span class="meta">PNG &middot; 2048&times;682 &middot; 1.5 MB</span>
+		<a class="dl" href="moshcoding/banners/moshcoding-banner-02-2048x682.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-03-2048x682.png"><img src="previews/moshcoding__banners__moshcoding-banner-03-2048x682.jpg" alt="Moshcoding banner variation 3" loading="lazy"></a>
+		<figcaption><b>Variation 03</b><span class="meta">PNG &middot; 2048&times;682 &middot; 1.2 MB</span>
+		<a class="dl" href="moshcoding/banners/moshcoding-banner-03-2048x682.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/banners/moshcoding-banner-04-2048x682.png"><img src="previews/moshcoding__banners__moshcoding-banner-04-2048x682.jpg" alt="Moshcoding banner variation 4" loading="lazy"></a>
+		<figcaption><b>Variation 04</b><span class="meta">PNG &middot; 2048&times;682 &middot; 1.2 MB</span>
+		<a class="dl" href="moshcoding/banners/moshcoding-banner-04-2048x682.png" download>Download</a></figcaption>
+	</figure>
+</div>
+
+<h3>Covers &amp; square panels</h3>
+<div class="grid tight">
+	<figure>
+		<a class="shot" href="moshcoding/covers/moshcoding-playlist-cover-403.png"><img src="previews/moshcoding__covers__moshcoding-playlist-cover-403.jpg" alt="Moshcoding playlist cover, square" loading="lazy"></a>
+		<figcaption>
+			<b>Playlist cover</b>
+			<span class="meta">PNG &middot; 403&times;403 &middot; 197 KB</span>
+			<p>Square cover art for the Spotify playlist. Also works as a square avatar.</p>
+			<a class="dl" href="moshcoding/covers/moshcoding-playlist-cover-403.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/covers/moshcoding-playlist-cover-367x381.png"><img src="previews/moshcoding__covers__moshcoding-playlist-cover-367x381.jpg" alt="Moshcoding playlist cover, panel crop" loading="lazy"></a>
+		<figcaption>
+			<b>Playlist cover &mdash; panel</b>
+			<span class="meta">PNG &middot; 367&times;381 &middot; 195 KB</span>
+			<p>Slightly taller crop of the same artwork.</p>
+			<a class="dl" href="moshcoding/covers/moshcoding-playlist-cover-367x381.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/covers/moshcoding-logo-panel-713.png"><img src="previews/moshcoding__covers__moshcoding-logo-panel-713.jpg" alt="Moshcoding square logo panel" loading="lazy"></a>
+		<figcaption>
+			<b>Logo panel &mdash; square</b>
+			<span class="meta">PNG &middot; 713&times;713 &middot; 605 KB</span>
+			<p>The original square lockup. Highest-resolution square we have &mdash; use it for avatars.</p>
+			<a class="dl" href="moshcoding/covers/moshcoding-logo-panel-713.png" download>Download</a>
+		</figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/covers/moshcoding-logo-panel-673x589.png"><img src="previews/moshcoding__covers__moshcoding-logo-panel-673x589.jpg" alt="Moshcoding logo panel, landscape crop" loading="lazy"></a>
+		<figcaption>
+			<b>Logo panel &mdash; landscape</b>
+			<span class="meta">PNG &middot; 673&times;589 &middot; 599 KB</span>
+			<p>Same lockup, wider framing.</p>
+			<a class="dl" href="moshcoding/covers/moshcoding-logo-panel-673x589.png" download>Download</a>
+		</figcaption>
+	</figure>
+</div>
+
+<h3>Ad cards</h3>
+<p class="sub">Roughly 16:9 creative sized for in-feed ads, blog headers and sponsor slots.</p>
+<div class="grid">
+	<figure>
+		<a class="shot" href="moshcoding/cards/moshcoding-card-coder-workstation-530x299.png"><img src="previews/moshcoding__cards__moshcoding-card-coder-workstation-530x299.jpg" alt="Coder workstation ad card" loading="lazy"></a>
+		<figcaption><b>Coder workstation</b><span class="meta">PNG &middot; 530&times;299 &middot; 226 KB</span>
+		<a class="dl" href="moshcoding/cards/moshcoding-card-coder-workstation-530x299.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/cards/moshcoding-card-turn-code-into-chaos-491x299.png"><img src="previews/moshcoding__cards__moshcoding-card-turn-code-into-chaos-491x299.jpg" alt="Turn code into chaos ad card" loading="lazy"></a>
+		<figcaption><b>Turn code into chaos</b><span class="meta">PNG &middot; 491&times;299 &middot; 252 KB</span>
+		<a class="dl" href="moshcoding/cards/moshcoding-card-turn-code-into-chaos-491x299.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/cards/moshcoding-card-terminal-playlist-516x299.png"><img src="previews/moshcoding__cards__moshcoding-card-terminal-playlist-516x299.jpg" alt="Terminal playlist ad card" loading="lazy"></a>
+		<figcaption><b>Terminal playlist</b><span class="meta">PNG &middot; 516&times;299 &middot; 164 KB</span>
+		<a class="dl" href="moshcoding/cards/moshcoding-card-terminal-playlist-516x299.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot" href="moshcoding/cards/moshcoding-split-preview-990x735.png"><img src="previews/moshcoding__cards__moshcoding-split-preview-990x735.jpg" alt="Moshcoding split preview sheet" loading="lazy"></a>
+		<figcaption><b>Split preview sheet</b><span class="meta">PNG &middot; 990&times;735 &middot; 514 KB</span>
+		<p>Several treatments side by side &mdash; handy for pitch decks and style references.</p>
+		<a class="dl" href="moshcoding/cards/moshcoding-split-preview-990x735.png" download>Download</a></figcaption>
+	</figure>
+</div>
+
+<h3>Icons</h3>
+<div class="grid tight">
+	<figure>
+		<a class="shot pad" href="moshcoding/icons/moshcoding-icon-256.png"><img src="moshcoding/icons/moshcoding-icon-256.png" alt="Moshcoding site icon" loading="lazy"></a>
+		<figcaption><b>Site icon</b><span class="meta">PNG &middot; 256&times;256 &middot; 63 KB</span>
+		<a class="dl" href="moshcoding/icons/moshcoding-icon-256.png" download>Download</a></figcaption>
+	</figure>
+	<figure>
+		<a class="shot pad" href="moshcoding/icons/moshcoding-apple-icon-180.png"><img src="moshcoding/icons/moshcoding-apple-icon-180.png" alt="Moshcoding Apple touch icon" loading="lazy"></a>
+		<figcaption><b>Apple touch icon</b><span class="meta">PNG &middot; 180&times;180 &middot; 36 KB</span>
+		<a class="dl" href="moshcoding/icons/moshcoding-apple-icon-180.png" download>Download</a></figcaption>
+	</figure>
+</div>
+
+<h3>Video</h3>
+<p class="sub">Every cut is available landscape (16:9) and vertical (9:16). The
+<b>under-30s</b> versions fit Shorts, Reels and X's inline player; the
+<b>with-audio</b> versions carry the music bed &mdash; check licensing before running those as paid ads.</p>
+<div class="scroll">
+<table>
+	<thead><tr><th>Cut</th><th>Aspect</th><th>Length</th><th>Audio</th><th>Size</th><th></th></tr></thead>
+	<tbody>
+		<tr><td><b>Final</b> &mdash; recommended</td><td>16:9</td><td>&lt;30s</td><td>yes</td><td>8.6 MB</td><td><a href="moshcoding/video/moshcoding-final-16x9-under-30s-with-audio.mp4" download>Download</a></td></tr>
+		<tr><td><b>Final</b> &mdash; recommended</td><td>9:16</td><td>&lt;30s</td><td>yes</td><td>7.7 MB</td><td><a href="moshcoding/video/moshcoding-final-9x16-under-30s-with-audio.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>16:9</td><td>full</td><td>&mdash;</td><td>20.6 MB</td><td><a href="moshcoding/video/moshcoding-reel-16x9.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>16:9</td><td>full</td><td>yes</td><td>21.3 MB</td><td><a href="moshcoding/video/moshcoding-reel-16x9-with-audio.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>16:9</td><td>&lt;30s</td><td>&mdash;</td><td>7.8 MB</td><td><a href="moshcoding/video/moshcoding-reel-16x9-under-30s.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>9:16</td><td>full</td><td>&mdash;</td><td>20.2 MB</td><td><a href="moshcoding/video/moshcoding-reel-9x16.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>9:16</td><td>full</td><td>yes</td><td>20.9 MB</td><td><a href="moshcoding/video/moshcoding-reel-9x16-with-audio.mp4" download>Download</a></td></tr>
+		<tr><td>Reel</td><td>9:16</td><td>&lt;30s</td><td>&mdash;</td><td>6.9 MB</td><td><a href="moshcoding/video/moshcoding-reel-9x16-under-30s.mp4" download>Download</a></td></tr>
+		<tr><td>Reel &mdash; alt edit</td><td>&mdash;</td><td>full</td><td>&mdash;</td><td>19.3 MB</td><td><a href="moshcoding/video/moshcoding-reel-alt.mp4" download>Download</a></td></tr>
+		<tr><td>Reel &mdash; alt edit</td><td>&mdash;</td><td>&lt;30s</td><td>&mdash;</td><td>4.9 MB</td><td><a href="moshcoding/video/moshcoding-reel-alt-under-30s.mp4" download>Download</a></td></tr>
+		<tr><td>Video</td><td>16:9</td><td>full</td><td>&mdash;</td><td>14.8 MB</td><td><a href="moshcoding/video/moshcoding-video-16x9.mp4" download>Download</a></td></tr>
+		<tr><td>Video</td><td>16:9</td><td>&lt;30s</td><td>&mdash;</td><td>5.8 MB</td><td><a href="moshcoding/video/moshcoding-video-16x9-under-30s.mp4" download>Download</a></td></tr>
+		<tr><td>Video</td><td>9:16</td><td>full</td><td>&mdash;</td><td>15.5 MB</td><td><a href="moshcoding/video/moshcoding-video-9x16.mp4" download>Download</a></td></tr>
+		<tr><td>Video</td><td>9:16</td><td>&lt;30s</td><td>&mdash;</td><td>6.1 MB</td><td><a href="moshcoding/video/moshcoding-video-9x16-under-30s.mp4" download>Download</a></td></tr>
+	</tbody>
+</table>
+</div>
+<div class="grid wide" style="margin-top:1.4rem">
+	<figure>
+		<span class="shot"><video src="moshcoding/video/moshcoding-final-16x9-under-30s-with-audio.mp4" poster="previews/moshcoding__banners__moshcoding-banner-main-1115x387.jpg" controls preload="none"></video></span>
+		<figcaption><b>Preview &mdash; 16:9 final cut</b><span class="meta">under 30s, with audio</span></figcaption>
+	</figure>
+	<figure>
+		<span class="shot"><video src="moshcoding/video/moshcoding-final-9x16-under-30s-with-audio.mp4" poster="previews/moshcoding__covers__moshcoding-playlist-cover-403.jpg" controls preload="none"></video></span>
+		<figcaption><b>Preview &mdash; 9:16 final cut</b><span class="meta">under 30s, with audio</span></figcaption>
+	</figure>
+</div>
+
+<!-- ================= PAYBADGE ================= -->
+<h2 id="paybadge">Paybadge</h2>
+<p class="sub">Embeddable &ldquo;accepts crypto&rdquo; shields for READMEs and docs, from the
+<a href="https://github.com/profullstack/paybadge">paybadge</a> project. Plain SVG &mdash; drop the
+snippet in and it renders anywhere Markdown does.</p>
+<div class="grid">
+	<figure>
+		<span class="shot pad" style="text-align:center"><img src="paybadge/paybadge.svg" alt="paybadge crypto shield, small" width="110" height="20" style="width:110px"></span>
+		<figcaption>
+			<b>Standard shield</b>
+			<span class="meta">SVG &middot; 110&times;20 &middot; 1 KB</span>
+			<p>Classic shields.io proportions, sits inline with other README badges.</p>
+			<code class="snippet">[![paybadge](https://anthony.dev.profullstack.com/assets/paybadge/paybadge.svg)](https://profullstack.com)</code>
+		</figcaption>
+	</figure>
+	<figure>
+		<span class="shot pad" style="text-align:center"><img src="paybadge/paybadge-large.svg" alt="paybadge crypto shield, large" width="150" height="28" style="width:150px"></span>
+		<figcaption>
+			<b>Large shield</b>
+			<span class="meta">SVG &middot; 150&times;28 &middot; 1 KB</span>
+			<p>Taller variant with uppercase lettering for hero placement at the top of a README.</p>
+			<code class="snippet">[![paybadge](https://anthony.dev.profullstack.com/assets/paybadge/paybadge-large.svg)](https://profullstack.com)</code>
+		</figcaption>
+	</figure>
+</div>
+
+<!-- ================= SIZES ================= -->
+<h2 id="sizes">Size cheat sheet</h2>
+<p class="sub">What to grab for which slot. Platforms crop aggressively &mdash; when an asset
+isn't an exact match, centre it and let the edges go.</p>
+<div class="scroll">
+<table>
+	<thead><tr><th>Slot</th><th>Platform spec</th><th>Use</th></tr></thead>
+	<tbody>
+		<tr><td>Profile picture / avatar</td><td>400&times;400 square</td><td><code>profullstack-mark-1024.png</code> &middot; <code>moshcoding-logo-panel-713.png</code> &middot; the headshots</td></tr>
+		<tr><td>X / LinkedIn header</td><td>1500&times;500 (3:1)</td><td><code>moshcoding-banner-01..04-2048x682.png</code> &mdash; exact 3:1. Or <code>profullstack-header-1707x282.jpg</code></td></tr>
+		<tr><td>Open Graph / link preview</td><td>1200&times;630 (1.91:1)</td><td><code>profullstack-social-card-2048x1152.png</code>, centre-cropped</td></tr>
+		<tr><td>YouTube thumbnail</td><td>1280&times;720 (16:9)</td><td><code>profullstack-social-card-2048x1152.png</code></td></tr>
+		<tr><td>Spotify playlist cover</td><td>square, 640&nbsp;px+</td><td><code>moshcoding-playlist-cover-403.png</code> &middot; <code>moshcoding-logo-panel-713.png</code></td></tr>
+		<tr><td>Reels / Shorts / TikTok</td><td>1080&times;1920 (9:16)</td><td><code>*-9x16-under-30s-*.mp4</code> &middot; <code>profullstack-9x16.mp4</code></td></tr>
+		<tr><td>In-feed video</td><td>16:9 landscape</td><td><code>*-16x9-under-30s-*.mp4</code> &middot; <code>profullstack-16x9.mp4</code></td></tr>
+		<tr><td>README badge</td><td>inline SVG</td><td><a href="#paybadge">Paybadge shields</a></td></tr>
+		<tr><td>Sticker / Discord emoji</td><td>square, transparent-ish</td><td><code>moshcoding-badge-push-code-start-pits-302.png</code></td></tr>
+		<tr><td>Blog / newsletter header</td><td>~2:1 to 3:1</td><td><code>moshcoding-banner-main-1115x387.png</code> &middot; <code>moshcoding-banner-build-break-mosh-769x302.png</code></td></tr>
+	</tbody>
+</table>
+</div>
+
+<!-- ================= USAGE ================= -->
+<h2 id="usage">Usage</h2>
+<p>Press, partners and anyone writing about us: use these as-is, no permission needed. Please
+<b>don't</b> recolour the marks, stretch them, add effects, or rebuild the wordmark in another
+typeface. Keep the Profullstack slash red and give the mark room to breathe.</p>
+<p>The #Moshcoding artwork is illustrative and generated &mdash; treat it as brand decoration
+rather than a trademarked mark, and check the note on the <a href="#moshcoding">Code Hard badge</a>
+before printing anything.</p>
+<p>Video cuts labelled <b>with-audio</b> carry a music bed that hasn't been cleared for paid
+distribution. Use the silent cuts for anything you're putting money behind, or ask first.</p>
+<p>Need a size, a format, a transparent background or a vector we don't have here?
+Email <a href="mailto:anthony@profullstack.com">anthony@profullstack.com</a>.</p>
+
+<footer>
+	<p><a href="/">Home</a> &middot; <a href="/projects.html">Projects</a> &middot; <a href="/blog/">Blog</a>
+	&middot; <a href="https://profullstack.com">profullstack.com</a>
+	&middot; <a href="https://moshcoding.com">moshcoding.com</a></p>
+	<p>66 downloadable assets, 213&nbsp;MB total. Assembled 2026-08-16 from the profullstack-web, moshcoding and paybadge repositories. Mirrored on GitHub.</p>
+</footer>
+
+<script>
+document.querySelectorAll('.sw').forEach(function (b) {
+	b.addEventListener('click', function () {
+		navigator.clipboard.writeText(b.dataset.hex).then(function () {
+			document.querySelectorAll('.sw.copied').forEach(function (o) { o.classList.remove('copied'); });
+			b.classList.add('copied');
+			setTimeout(function () { b.classList.remove('copied'); }, 1500);
+		});
+	});
+});
+</script>
+
+</body>
+</html>
